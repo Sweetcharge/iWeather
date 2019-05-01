@@ -27,7 +27,7 @@ function parseData(){
         min = Math.round(reqJSON.main.temp_min);
         max = Math.round(reqJSON.main.temp_max);
         icn = reqJSON.weather[0].icon;
-        source = "http://openweathermap.org/img/w/"+icn+".png";
+        source = "https://openweathermap.org/img/w/"+icn+".png";
 
         document.getElementById("place").innerHTML = title;
         document.getElementById("description").innerHTML = desc;
@@ -55,7 +55,7 @@ function parse5Days(){
             let time = reqJSON.list[i].dt_txt.split(" ");
             if(time[1] == "00:00:00"){
                 icn = reqJSON.list[i].weather[0].icon;
-                source = "http://openweathermap.org/img/w/"+icn+".png";
+                source = "https://openweathermap.org/img/w/"+icn+".png";
                 pres = reqJSON.list[i].main.pressure;
                 min = Math.round(reqJSON.list[i].main.temp_min);
                 max = Math.round(reqJSON.list[i].main.temp_max);
