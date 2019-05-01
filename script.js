@@ -4,8 +4,8 @@ function getData(){
     var name_div = document.getElementById("result");
     var loc = document.getElementById("location").value;
 
-    link = "http://api.openweathermap.org/data/2.5/weather?q="+loc+"&units=imperial&appid=860d6f4dedb54ce77c336343cb748f4f"
-    link5Days = "http://api.openweathermap.org/data/2.5/forecast?q="+loc+"&units=imperial&appid=860d6f4dedb54ce77c336343cb748f4f"
+    link = "https://api.openweathermap.org/data/2.5/weather?q="+loc+"&units=imperial&appid=860d6f4dedb54ce77c336343cb748f4f"
+    link5Days = "https://api.openweathermap.org/data/2.5/forecast?q="+loc+"&units=imperial&appid=860d6f4dedb54ce77c336343cb748f4f"
 
     req.open("GET", link, true);
     req5Days.open("GET", link5Days, true);
